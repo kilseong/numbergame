@@ -25,12 +25,12 @@ body {
 }
 
 
-.button-go {
+ .button-go {
 
   background-color: black;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 18px 38px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -43,6 +43,11 @@ body {
 .button-go:hover{
 background-color: green;
 
+} 
+
+.button-go:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .button-reset {
@@ -50,7 +55,7 @@ background-color: green;
   background-color: blue;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -62,11 +67,12 @@ background-color: green;
 
 .button-reset:hover{
 background-color: red;
-}
+} 
 
 .input-first{
   width: 200px;
   height: 50px;
+  font-size: 30px;
 }
 
 
@@ -133,11 +139,12 @@ background-color: red;
   
   .button-reset:hover{
   background-color: red;
-  }
+  } 
   
   .input-first{
     width: 100px;
     height: 25px;
+    font-size: small;
   }
   
 

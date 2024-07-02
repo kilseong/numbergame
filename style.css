@@ -1,0 +1,144 @@
+body {
+  border: 3px solid blue;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 30px;
+  margin: 20px 20px;
+  font-size: 30px;
+}
+
+.text-first{
+  font-size: 20px;
+  color: red;
+}
+
+.text-second{
+  font-size:20px;
+  color: blueviolet;
+}
+
+
+.text-third{
+  font-size: 20px;
+  color: brown;
+
+}
+
+
+.button-go {
+
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.button-go:hover{
+background-color: green;
+
+}
+
+.button-reset {
+
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.button-reset:hover{
+background-color: red;
+}
+
+.input-first{
+  width: 200px;
+  height: 50px;
+}
+
+
+@media (max-width:600px){ 
+  
+  body {
+    font-size: small;
+    border: 3px solid blue;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px 20px;
+    color: rgb(233, 9, 9);
+  }
+  
+  .text-first{
+    color: palevioletred;
+    font-size: small;
+
+  }
+
+
+  .text-second{
+    color: rgb(13, 226, 84);
+    font-size: small;
+  }
+
+  .text-third{
+    color: blueviolet;
+    font-size: small;
+  
+  }
+  
+  .button-go {
+  
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .button-reset {
+  
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+  }
+  
+  .button-reset:hover{
+  background-color: red;
+  }
+  
+  .input-first{
+    width: 100px;
+    height: 25px;
+  }
+  
+
+}

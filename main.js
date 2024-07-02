@@ -34,14 +34,16 @@ function play(){
   let userValue = userInput.value;
 
   if(userValue < 1 || userValue > 100){
-    resultArea.textContent="1과100사이 숫자를 입력해 주세요"
+    resultArea.textContent="1과100사이 숫자를 입력해 주세요";
     return;
   }
 
   if(history.includes(userValue)){
-    resultArea.textContent = "이미 입력한 숫자 입니다. 다른 숫자를 입력해 주세요."
+    resultArea.textContent = "이미 입력한 숫자 입니다. 다른 숫자를 입력해 주세요.";
     return;
   }
+
+
 
   chances -- ;
   chanceArea.textContent = `남은기회 : ${chances}번`;
@@ -61,20 +63,29 @@ function play(){
   history.push(userValue);
   console.log(history);
 
+
   if(chances < 1){
-    gameOver=true
+    gameOver=true;
   }
 
   if(gameOver == true){
-    playButton.disabled = true
+    playButton.disabled = true;
   }
 }
 
 function reset(){
+
+  pickRandomNum();
     //user input창이 깨끗하게 정리
     userInput.value = "";
     //새로운 번호가 생성
-    pickRandomNum();
+    
+
+    gameOver = false;
+    playButton.disabled = false;
+    chances = 3;
+    chanceArea.textContent = `남은 기회:${chances}번`;
+    history = [];
 
     resultArea.textContent="결과값이 여기 나옵니다!"
 
